@@ -7,6 +7,9 @@ public class StreamsCreateFullSentence {
     String createAFullSentenceFromTheList(List<String> input) {
         // TODO: implement
 
-        return "";
-    }
+
+
+        return input.stream()
+                .collect(Collectors.joining(" "));
+    }////tf?
 }
